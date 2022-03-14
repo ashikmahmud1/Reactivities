@@ -8,4 +8,14 @@
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\Persistence\Persistence.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Activities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Activities\" />
+  </ItemGroup>
 </Project>
